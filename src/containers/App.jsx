@@ -14,7 +14,7 @@ const App = () => {
   return videos.length === 0 ? (
     <h1>Loading...</h1>
   ) : (
-    <div className="">
+    <>
       <Header />
       <Search />
       {videos.mylist.length > 0 && (
@@ -42,7 +42,7 @@ const App = () => {
         </Carrusel>
       </Categories>
       <Footer />
-    </div>
+    </>
   )
 }
 export default App

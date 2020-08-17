@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTpyes from 'prop-types'
 import '../assets/styles/components/CarruselItem.scss'
 import playIcon from '../assets/static/play_icon.png'
 export const CarruselItem = ({
@@ -23,3 +24,10 @@ export const CarruselItem = ({
     </div>
   </div>
 )
+CarruselItem.propTypes = {
+  cover: PropTpyes.string,
+  title: PropTpyes.string,
+  year: PropTpyes.number,
+  contentRating: PropTpyes.string,
+  duration: PropTpyes.number,
+}
