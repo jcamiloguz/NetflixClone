@@ -1,15 +1,13 @@
 import React from 'react'
 import '../assets/styles/components/Header.scss'
+import Logo from '../assets/static/Netflix_Logo.png'
+import userIcon from '../assets/static/Profile.png'
 export const Header = () => (
   <header className="header">
-    <img
-      className="header__img"
-      src="../assets/Netflix_Logo.png"
-      alt="Netflix_clone"
-    />
+    <img className="header__img" src={Logo} alt="Netflix_clone" />
     <div className="header__menu">
       <div className="header__menu--profile">
-        <img src="../assets/user-icon.png" alt="" />
+        <img src={userIcon} alt="" />
         <p>Perfil</p>
       </div>
       <ul>
